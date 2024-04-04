@@ -19,13 +19,16 @@ public class OrderTester
 
         // add 10 units to stock
         customerQueue.addStock(10);
-        
+
         // add three customer orders (3,3,5)
+        customerQueue.addOrder("Customer1", "date", 3);
+        customerQueue.addOrder("Customer1", "date", 3);
         customerQueue.addOrder("Customer1", "date", 5);
-        customerQueue.addOrder("Customer1", "date", 5);
-        customerQueue.addOrder("Customer1", "date", 8);
 
         // clear stock by filling orders with new stock of 8
+        customerQueue.sellOut();
         // print queue 
+        System.out.println(customerQueue);
+
     }
 }
