@@ -1,8 +1,8 @@
-public class OrderTester 
+public class OrderTester<T>
 {
     public static void main(String[] args)
     {
-        OrderQueue customerQueue = new OrderQueue<>(14);
+        OrderQueue<CustomerOrder> customerQueue = new OrderQueue<>(14);
         customerQueue.addOrder("Customer1", "date", 5);
         customerQueue.addOrder("Customer1", "date", 5);
         customerQueue.addOrder("Customer1", "date", 8);
@@ -28,7 +28,7 @@ public class OrderTester
         customerQueue.sellOut();
         // // print queue 
         System.out.println(customerQueue);
-        // System.out.println("yes");
+        
 
     }
 }

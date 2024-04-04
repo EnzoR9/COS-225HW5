@@ -3,19 +3,19 @@ public class OrderQueue<T> extends LinkedQueue<T>
     public LinkedQueue<CustomerOrder> queue;
 
     public int stock; 
-    //public int queueSize;
+    public int queueSize;
 
     public OrderQueue()
     {
         this.queue = new LinkedQueue<>();
         this.stock = 0;
-        //this.queueSize = 0;
+        this.queueSize = 0;
     }
 
     public OrderQueue(int s)
     {
         this.queue = new LinkedQueue<>();
-        //this.queueSize = 0;
+        this.queueSize = 0;
         this.stock = s;
     }
 
